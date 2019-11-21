@@ -1,3 +1,13 @@
+### Week 1 exercises:
+- [change-text](https://ChuikinaMaria.github.io/javascript-3/dom-manipulation/exercises/1-change-text.html)
+- [chage-link](https://ChuikinaMaria.github.io/javascript-3/dom-manipulation/exercises/2-chage-link.html)
+- [update-list](https://ChuikinaMaria.github.io/javascript-3/dom-manipulation/exercises/3-update-list.html)
+- [add-a-link](https://ChuikinaMaria.github.io/javascript-3/dom-manipulation/exercises/4-add-a-link.html)
+- [add-a-header](https://ChuikinaMaria.github.io/javascript-3/dom-manipulation/exercises/5-add-a-header.html)
+- [fix-the-list](https://ChuikinaMaria.github.io/javascript-3/dom-manipulation/exercises/6-fix-the-list.html)
+- [start-from-nothing](https://ChuikinaMaria.github.io/javascript-3/dom-manipulation/exercises/7-start-from-nothing.html)
+
+
 # JS 3
 
 this module is a bit different (again) from the last.
