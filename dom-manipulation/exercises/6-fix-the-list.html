@@ -55,6 +55,38 @@
       </div>
 
       <script id='DOM manipulation script'>
+        let modified = document.getElementById('modified');
+        let replicateMe = document.getElementById('replicate-me');    
+        
+        let b = modified.children[0];
+        let c = b.children[1];
+        c.innerText = replicateMe.children[1].children[1].innerText;
+        b.removeChild(b.children[3]);
+        modified.removeChild(b);
+        
+        let h1 = document.getElementById('replicate-me').children[0];
+        let h1Mo = document.createElement('H1');
+        h1Mo.innerText = h1.innerText;
+        modified.appendChild(h1Mo);
+
+        let UL = document.createElement('ul');
+        let length = b.children.length;
+        for (let i=0; i<length; i++) {
+          let LI = document.createElement('li');
+          LI.innerText = b.children[i].innerText;
+          UL.appendChild(LI);
+        }
+        modified.appendChild(UL);
+
+        // const orderedList = document.createElement('ol');
+
+// const numChildren = unorderedList.children.length;
+// for (let i = 0; i < numChildren; i++) {
+//   const nextChild = unorderedList.children[i].cloneNode(true);
+//   orderedList.appendChild(nextChild);
+
+
+
         // write me! (... without using cloneNode, that's kind of cheating)
       </script>
 

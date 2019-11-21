@@ -41,6 +41,12 @@
       </div>
 
       <script id='DOM manipulation script'>
+        const a = document.createElement('a');
+        const link = document.getElementById('replicate-me').children[1];
+        a.href = link.href;
+        a.target = link.target;
+        a.innerText = link.innerText;        
+        document.getElementById('modified').appendChild(a);
        // write me! (... without using cloneNode, that's kind of cheating)
       </script>
 

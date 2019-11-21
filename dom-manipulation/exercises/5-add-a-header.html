@@ -53,6 +53,15 @@
       </div>
 
       <script id='DOM manipulation script'>
+        let a = document.getElementById('modified');
+        let b = a.children[0];
+        let c = b.children[1];
+        c.innerText = document.getElementById('replicate-me').children[1].children[1].innerText;
+        
+        let h1 = document.getElementById('replicate-me').children[0];
+        let h1Mo = document.createElement('H1');
+        h1Mo.innerText = h1.innerText;
+        document.getElementById('modified').insertBefore(h1Mo, b);
         // write me! (... without using cloneNode, that's kind of cheating)
       </script>
 

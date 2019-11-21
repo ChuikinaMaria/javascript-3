@@ -41,6 +41,11 @@
       </div>
 
       <script id='DOM manipulation script'>
+        let a = document.getElementById('modified');
+        let b = a.children[0];
+        b.target = '_blank';
+        b.innerText = document.getElementById('replicate-me').children[0].innerText;
+
         // write me! (... without using cloneNode, that's kind of cheating)
       </script>
 

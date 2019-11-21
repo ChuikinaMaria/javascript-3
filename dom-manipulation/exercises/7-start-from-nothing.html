@@ -42,8 +42,37 @@
       </div>
 
       <div id='modified'></div>
-
+      
       <script id='DOM manipulation script'>
+        let modified = document.getElementById('modified');
+        let replicateMe = document.getElementById('replicate-me');
+
+        let h2 = document.createElement('h2');
+        h2.innerText = replicateMe.children[0].innerText;
+        modified.appendChild(h2);
+
+        let UL = document.createElement('ul');
+        let length = replicateMe.children[1].children.length;
+        for (let i =0; i<length; i++) {
+          let LI = document.createElement('li');
+          LI.innerText = replicateMe.children[1].children[i].innerText;
+          UL.appendChild(LI);
+        }
+        modified.appendChild(UL);
+        let aTarget = document.createElement('a')
+        let aSource = replicateMe.children[1].children[2].children[0];
+        aTarget.href = aSource.href;
+        aTarget.target = aSource.target;
+        aTarget.innerText = aSource.innerText;
+        modified.children[1].children[2].innerText = '';
+        modified.children[1].children[2].appendChild(aTarget);
+        
+
+
+
+
+
+      
         // write me! (... without using cloneNode, that's kind of cheating)
       </script>
 

@@ -40,6 +40,11 @@
       </div>
 
       <script id='DOM manipulation script'>
+        const a = document.getElementById('replicate-me');
+        const b = a.children[0];
+        b.innerText = b.innerText.replace('hi!', 'bye!');
+        
+
         // write me! (... without using cloneNode, that's kind of cheating)
       </script>
 
