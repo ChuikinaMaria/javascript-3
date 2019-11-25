@@ -66,8 +66,13 @@ function writeTheDelays3() {
   }, 200);
 
   setTimeout(function sto_2() {
+<<<<<<< HEAD
     console.assert(x === 'abc', 'x should be string abc');
   }, 300);
+=======
+    console.assert(x.toString() === 'a,b,c', 'x.toString() should be string a,b,c');
+  }, null);
+>>>>>>> f538fc7f64f1f51c349a6c1cccf25d2e9ad1c0f7
 
   setTimeout(function sto_3() {
     x = ["a", ...x, "d"];
@@ -80,15 +85,25 @@ function writeTheDelays3() {
   }, 100);
 
   setTimeout(function sto_5() {
+<<<<<<< HEAD
     console.assert(x.toString() === 'a,b', 'x.toString() should be a,b');
   }, 500);
+=======
+    x.pop();
+    console.log(typeof x, x.toString());
+  }, null);
+
+  setTimeout(function sto_6() {
+    console.assert(x.toString() === 'ab', 'x.toString() should be ab');
+  }, null);
+>>>>>>> f538fc7f64f1f51c349a6c1cccf25d2e9ad1c0f7
 }
 exercises.push(writeTheDelays3);
 
 
 
 
-const loupedExercises = examples.map(louping);
+const loupedExercises = exercises.map(louping);
 const liveStudiedExercises = liveStudy(loupedExercises, 'Write The Delays');
 document.body.appendChild(liveStudiedExercises.container);
 
