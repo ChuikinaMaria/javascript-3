@@ -10,21 +10,21 @@ function writeTheDelays1() {
 
   setTimeout(function sto_1() {
     x += 'script'; console.log(x);
-  }, null);
+  }, 3000);
 
   setTimeout(function sto_2() {
     x = ''; console.log(x);
-  }, null);
+  }, 1000);
 
   x += 'java'; console.log(x);
 
   setTimeout(function sto_3() {
     x += 'java'; console.log(x);
-  }, null);
+  }, 2000);
 
   setTimeout(function sto_4() {
     console.assert(x === 'javascript', 'x should be "javascript"');
-  }, null);
+  }, 4000);
 }
 exercises.push(writeTheDelays1);
 
@@ -37,22 +37,22 @@ function writeTheDelays2() {
 
   setTimeout(function sto_1() {
     console.assert(x === 'Java Script', 'x should be "Java Script"');
-  }, null);
+  }, 1500);
 
   setTimeout(function sto_2() {
     x = x.slice(1, x.length);
     console.log(x);
-  }, null);
+  }, 500);
 
   setTimeout(function sto_3() {
     x = [].map.call(x, char => char.charCodeAt() < 97 ? ' ' + char : char);
     console.log(x.toString());
-  }, null);
+  }, 0);
 
   setTimeout(function sto_4() {
     x = x.join('');
     console.log(x);
-  }, null);
+  }, 1000);
 }
 exercises.push(writeTheDelays2);
 
@@ -63,25 +63,25 @@ function writeTheDelays3() {
   setTimeout(function sto_1() {
     x = x.reduce((acc, entry) => acc + entry, '');
     console.log(typeof x, x.toString());
-  }, null);
+  }, 200);
 
   setTimeout(function sto_2() {
     console.assert(x === 'abc', 'x should be string abc');
-  }, null);
+  }, 300);
 
   setTimeout(function sto_3() {
     x = ["a", ...x, "d"];
     console.log(typeof x, x.toString());
-  }, null);
+  }, 0);
 
   setTimeout(function sto_4() {
     x.pop();
     console.log(typeof x, x.toString());
-  }, null);
+  }, 100);
 
   setTimeout(function sto_5() {
     console.assert(x.toString() === 'a,b', 'x.toString() should be a,b');
-  }, null);
+  }, 500);
 }
 exercises.push(writeTheDelays3);
 

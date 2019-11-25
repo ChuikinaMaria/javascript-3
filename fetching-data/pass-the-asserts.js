@@ -11,6 +11,9 @@ function passTheAsserts1() {
   fetch(requestURL)
     .then(function parseResponse(resp) { return resp.json() })
     .then(function workWithData(data) {
+      const dataKeys = Object.keys(data);
+      let falseKeys = dataKeys.filter(key => data[key] === false);
+      return falseKeys.length;
       // write me!
     })
     .then(function assertResult(result) {
@@ -33,6 +36,7 @@ function passTheAsserts2() {
   fetch(requestURL)
     .then(function parseResponse(resp) { return resp.json() })
     .then(function workWithData(data) {
+      return data.length;
       // write me!
     })
     .then(function assertResult(result) {
@@ -55,6 +59,8 @@ function passTheAsserts3() {
   fetch(requestURL)
     .then(function parseResponse(resp) { return resp.json() })
     .then(function workWithData(data) {
+      let result = data.varieties;
+      return result;
       // write me!
     })
     .then(function assertResult(result) {

@@ -1,7 +1,7 @@
 /* explore the data available behind the practice API
     can you figure out which URL's point to the resources that will pass the asserts?
 
-    live API for fetching: https://hackyourfuturebelgiu.github.io/practice-api/
+    live API for fetching: https://hackyourfuturebelgium.github.io/practice-api/
     data in source: https://github.com/HackYourFutureBelgium/practice-api
 
     This set of exercises is to help you look behind the mystery of an API call.
@@ -14,7 +14,7 @@
     Navigate around the repository a bit to become familiar with what's in the .json files
        https://github.com/HackYourFutureBelgium/practice-api
     Then try accessing the same data via the API by entering this URL in your browser ...
-      https://hackyourfuturebelgiu.github.io/practice-api/
+      https://hackyourfuturebelgium.github.io/practice-api/
     ... adding paths to the URL until you find the same data you were studying as source code on github
 
 
@@ -25,7 +25,7 @@
 const findTheURLs = [];
 
 function findTheURL1() {
-  const requestURL = null;
+  const requestURL = 'https://hackyourfuture.be/practice-api/types.json';
 
   fetch(requestURL)
     .then(function parseResponse(resp) { return resp.json() })
@@ -45,7 +45,7 @@ findTheURLs.push(findTheURL1);
 
 
 function findTheURL2() {
-  const requestURL = null;
+  const requestURL = 'https://hackyourfuture.be/practice-api/food/wet/soups.json';
 
   fetch(requestURL)
     .then(function parseResponse(resp) { return resp.json() })
@@ -66,7 +66,7 @@ findTheURLs.push(findTheURL2);
 
 
 function findTheURL3() {
-  const requestURL = null;
+  const requestURL = 'https://hackyourfuture.be/practice-api/food/dry/nuts.json';
 
   fetch(requestURL)
     .then(function parseResponse(resp) { return resp.json() })
@@ -86,7 +86,7 @@ findTheURLs.push(findTheURL3);
 
 
 function findTheURL4() {
-  const requestURL = null;
+  const requestURL = 'https://hackyourfuture.be/practice-api/animals/worms.json';
 
   fetch(requestURL)
     .then(function parseResponse(resp) { return resp.json() })
