@@ -59,9 +59,14 @@ function passTheAsserts3() {
   fetch(requestURL)
     .then(function parseResponse(resp) { return resp.json() })
     .then(function workWithData(data) {
-      let result = data.varieties;
+      let result = {};
+      let keys = ['boolean', 'color', 'null', 'number', 'string'];
+      keys.forEach(function(key){
+        result[key] = data[key];
+      })
       return result;
       // write me!
+      // To try instanceof object
     })
     .then(function assertResult(result) {
       console.assert(Object.keys(result).length === 5, 'result has 5 properties')
@@ -88,6 +93,13 @@ function passTheAsserts4() {
   fetch(requestURL)
     .then(function parseResponse(resp) { return resp.json() })
     .then(function workWithData(data) {
+      let nested = data['nested'];
+      let result = Object.values(nested)
+      // let keys = Object.keys(data);
+      // let filteredKeys = keys.filter(key => Array.isArray(data[key]));
+      // let result = [];
+      // filteredKeys.forEach(key => result.push(data[key]));
+      return result;
       // write me!
     })
     .then(function assertResult(result) {

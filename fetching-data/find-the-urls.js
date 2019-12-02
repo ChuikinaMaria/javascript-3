@@ -1,11 +1,7 @@
 /* explore the data available behind the practice API
     can you figure out which URL's point to the resources that will pass the asserts?
 
-<<<<<<< HEAD
-    live API for fetching: https://hackyourfuturebelgium.github.io/practice-api/
-=======
     live API for fetching: https://hackyourfuture.be/practice-api/
->>>>>>> f538fc7f64f1f51c349a6c1cccf25d2e9ad1c0f7
     data in source: https://github.com/HackYourFutureBelgium/practice-api
 
     This set of exercises is to help you look behind the mystery of an API call.
@@ -18,11 +14,7 @@
     Navigate around the repository a bit to become familiar with what's in the .json files
        https://github.com/HackYourFutureBelgium/practice-api
     Then try accessing the same data via the API by entering this URL in your browser ...
-<<<<<<< HEAD
-      https://hackyourfuturebelgium.github.io/practice-api/
-=======
       https://hackyourfuture.be/practice-api/
->>>>>>> f538fc7f64f1f51c349a6c1cccf25d2e9ad1c0f7
     ... adding paths to the URL until you find the same data you were studying as source code on github
 
 
